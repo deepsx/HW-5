@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Homework 5</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
+  <link rel="icon" href="http://goit.ua/wp-content/themes/goit/images/favicon.ico" type="image/x-icon"/>
+</head>
+  <body>
+  <div class="wrapper">
+<!-- HEADER -->
+  <div class="menu">
+    <ul class="register">
+      <li><a class="cad" href="#">Cadastre-se</a></li>
+      <li>Ola!<a class="entar" href="#">Entar</a>ou</li>
+    </ul>
+      <ul>
+        <li class ="minhas"><a href="#">Minhas Ofertas</a></li>
+        <li class="first"><a href="#">Ajuda</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Forum</a></li>
+        <li><a href="#">Vender</a></li>
+        <li><a href="#">Meu YouBike</a></li>
+      </ul>
+  </div>
+<!-- FORM -->
+<h1 class="cadastre">Cadastre-se</h1>
+  <div class="mform">
+    <button name="fb" id="fb"></button>
+  <form action="send.php" method="POST">
+    <div class="hr"></div>
+    <div class="fb"></div>
+    <div class="line2">OU</div>
+      <input type="text" id="name" placeholder="First Name" title="Your name" maxlength="90" required />
+      <input type="text" id="lastname" placeholder="Last Name" title="Your surname" maxlength="90" />
+      <input type="email" id="mail" placeholder="Email Address" title="Your email" maxlength="50" required />
+      <input type="password" id="pass" placeholder="Choose Password" title="Your password" minlength="6" maxlength="50" required />
+      <input type="password" id="pass2" placeholder="Password Confirm" title="Confirm your password" minlength="6" maxlength="50" required />
+      <input type="checkbox" name="accept" value="Send updates" id="accept"/>
+      <label for="accept">Send me Youbike updates and tips</label>
+      <input type="submit" name="signup" id="signup" value="Create my Account"/>
+      <p>By clicking the button above, you agree to the Terms of Service</p>
+      <p>Xiew our Privacy Policy.</p>  
+  </form>
+  </div>
+</div>  
+<!-- FACEBOOK ACTION SCRIPT -->
+    <script>
+    document.getElementById('fb').onclick = function()
+    {
+    alert('К сожалению еще только учусь, API Facebook еще не изучил');
+    }
+    </script>
+  </body>
+</html>
